@@ -1,0 +1,61 @@
+/* =========================================================
+   ESTILO ACESSÍVEL PADRÃO (ALTO CONTRASTE E LEGIBILIDADE)
+   ========================================================= */
+
+/* 1. Configurações gerais de toda a página (tag body) */
+body {
+  background-color: #121212;      /* Fundo escuro para evitar cansaço visual e brilho excessivo */
+  color: #FFFFFF;                 /* Texto branco para garantir alto contraste de leitura */
+  font-family: Arial, sans-serif; /* Fonte limpa e sem serifa (melhor para dislexia) */
+  font-size: 18px;                /* Tamanho de letra confortável para leitura */
+  line-height: 1.6;               /* Espaçamento entre linhas para as letras não se misturarem */
+  padding: 20px;                  /* Espaço interno nas bordas da tela */
+}
+
+/* 2. Estilo dos Títulos Principais */
+h1, h2, h3 {
+  color: #FFD700;                 /* Amarelo ouro para destacar os títulos no fundo escuro */
+  margin-bottom: 15px;            /* Espaço abaixo de cada título */
+}
+
+/* 3. Estilo para Caixas de Conteúdo (classe .cartao) */
+.cartao {
+  background-color: #1E1E1E;      /* Fundo cinza bem escuro para destacar o bloco */
+  border: 2px solid #FFFFFF;      /* Borda branca visível ao redor da caixa */
+  padding: 15px;                  /* Espaço interno entre o texto e a borda */
+  margin-bottom: 20px;            /* Espaço externo abaixo da caixa */
+}
+
+/* 4. Estilo dos Campos de Formulário (input) e Caixas de Grupo (fieldset) */
+fieldset {
+  border: 2px solid #FFD700;      /* Borda amarela agrupando as opções */
+  padding: 15px;                  /* Espaço interno */
+  margin-bottom: 20px;            /* Espaço externo abaixo do grupo */
+}
+
+input {
+  background-color: #FFFFFF;      /* Fundo branco no campo de digitação */
+  color: #000000;                 /* Letra preta dentro do campo */
+  font-size: 18px;                /* Letra grande ao digitar */
+  padding: 8px;                   /* Espaço interno no campo */
+  border: 2px solid #FFD700;      /* Borda amarela no campo */
+  margin-bottom: 15px;            /* Espaço abaixo do campo */
+}
+
+/* 5. Estilo dos Botões (button) */
+button {
+  background-color: #FFD700;      /* Botão amarelo ouro de alto destaque */
+  color: #000000;                 /* Texto preto no botão (máximo contraste) */
+  font-size: 18px;                /* Tamanho de letra legível */
+  font-weight: bold;              /* Texto em negrito */
+  padding: 12px 20px;             /* Tamanho confortável para clicar */
+  border: none;                   /* Remove borda padrão feia */
+  cursor: pointer;                /* Mostra a mãozinha ao passar o mouse */
+}
+
+/* 6. REGRA DE OURO: FOCO VISÍVEL DO TECLADO (:focus) */
+/* Quando o usuário aperta TAB, uma borda forte aparece ao redor do item ativo */
+a:focus, input:focus, button:focus {
+  outline: 4px solid #00FFFF;     /* Contorno azul ciano brilhante */
+  outline-offset: 3px;            /* Afasta o contorno 3px para ficar bem visível */
+}
